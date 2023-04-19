@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Impact, sans-serif;
+    background-image: url(../img/portada.jpg);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+
+/* logo */
+.log{
+   float: left;
+   width: 90px;
+   padding-top: 3px;
+   
+}
+/*  */
+
+/* barra de inicio */
+
+.menu{
+    background-image:url(../img/zenpat.png);
+    height:6rem;
+    background-color: yellow;
+}
+#disc{
+    top: 35px;
+    left: 75%;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+#disc:hover{
+    background: rgba(193, 11, 199, 0.938);
+    transition: .5s;
+    border-radius: 20px;
+}
+
+header div ul li{
+   display: inline-block;
+   line-height: 30px;
+    margin: 0 4px; 
+}
+
+header div ul li a{
+
+color: rgb(0, 0, 0);
+font-size: 20px;
+padding: 10px 13px;
+text-transform: uppercase;
+text-decoration: none;
+
+}
+
+header div ul li a:hover{
+    background: rgba(199, 111, 11, 0.938);
+    transition: .5s;
+    border-radius: 20px;
+}
+
+
+/* finaliza barra inicio */
+
+ /* primer pilar*/
+ .contenido{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 2fr 2fr 2fr;
+    min-height: 100vh;
+    margin-left: 10px;
+}
+
+
+.pilares{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.pilares figure{
+    position: relative;
+    height:250px ;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+
+}
+
+.pilares img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms;
+}
+
+.pilares figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 500ms;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.pilares figure:hover .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.pilares figure:hover .capa h3{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.pilares figure .capa h3{
+    color: rgb(233, 0, 39);
+    font-weight: 400;
+    margin-bottom: 100px;
+    transition: all 500ms;
+    margin-top: 30px;
+
+}
+
+.pilares figure .capa p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+}
+
+/* media de los pilares */
+
+@media(max-width: 768px) {
+    .contenido{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 2fr 2fr;
+    min-height: 100vh;
+    margin-left: 10px;
+}
+}
+@media(max-width: 576px) {
+    .contenido{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 2fr ;
+    min-height: 100vh;
+    margin-left: 10px;
+}
+
+.pilares{
+    width: 100%;
+    margin-top: 200px;
+}
+}
+
+  /* las 12 lunas */
+
+  .conoce{
+    padding-left: 40%;
+  }
+  table{
+    border: 3px solid black;
+    background-color: rgb(221, 203, 203);
+    height: 500px;
+    width: 85%;
+    margin: 5%
+    ;
+}
+table img{
+    width: 250px;
+    height: 250px;
+}
+
+table td{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+}
+
+
+/* termina barra de busqueda */
+
+
+/* articulo */
+
+
+header div{
+    text-align: left;
+    margin-left: 5px;
+    
+    float: left;
+}
+
+h1{
+    text-align: left;
+    font-size: 2.5rem;
+    padding-left: 15%;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+article{
+    background-color: white;
+
+}   
+article h2{
+    color: rgb(206, 95, 21);
+    font-size: 1.7rem;
+    text-align: left;
+    padding-left: 15%;
+    margin: 20px;
+}
+article p {
+    padding-left: 16%;
+    padding-right: 16%;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    }
+/* videos del articulo */
+.vid{
+    border-radius: 10px;
+    margin-left: 25%;
+    width: 800px;
+    height: 600px;
+} 
+/* imagenes del articulo */
+article img{
+
+    width: 60%;
+    border-radius: 10px;
+    border:3px solid rgb(0, 0, 0);
+    margin: 20px;
+    margin-left: 20%;
+
+}
+/*  */
+/* noticias */
+
+#posnot {
+    top: 7%;
+    position: absolute;
+    margin-left: 50px;
+}
+#posnot h2{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: orangered;
+}
+.noticias{
+
+    text-align: center;
+    font-size: 1rem;
+    position: absolute ;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 4px 4px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+
+.noticias img{
+
+    width: 150px;
+    height: 100px;
+    border-radius: 6px;
+    border:1px solid ;
+    margin:30px;
+    transition: all 0.5s;
+}
+.noticias img:hover{
+    transform: scale(1.09);
+}
+/*  */
+
+/* descripcion derecha */
+
+.desder{
+
+    text-align: center;
+    font-size: 1rem;
+    margin-right: 10px;
+    position: absolute ;
+    top: 200px;
+    left: 85%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgb(70, 69, 69) 4px 4px 20px;;
+    }
+
+.desder img{
+
+    width: 210px;
+    height: 260px;
+    border-radius: 10px;
+    border:2px solid black;
+    margin:30px;
+    transition: all 0.5s;
+    
+}
+
+
+
+.desder img:hover{
+    transform: scale(1.09);
+}
+
+/* Comunidad */
+
+.contacto{
+    padding-right: 40%;
+    padding-left: 5%;
+}
+/* Pie de pagina */
+footer{
+    background-color: #0a141d;
+    width: 100%;    
+}
+
+    
+footer .grupo-1{
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+footer .grupo-1 .box h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .grupo-1 .box p{
+    color:whitesmoke ;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 0,5;
+}
+
+footer .grupo-1 .red-social a:hover{
+    color: rgb(43, 205, 226);
+}
+
+footer .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #0a1a2a;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*  */
+
+/* media queries index */
+@media(max-width:768px){
+
+    h1{
+        text-align: left;
+        font-size: 2.5rem;
+        padding-left: 5%;
+        padding-top: 30px;
+        margin-bottom: 10px;}
+
+    article p {
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: left;
+        font-family: 'Source Sans Pro', sans-serif;
+
+    }
+    article h2{
+        color: rgb(206, 95, 21);
+        font-size: 1.7rem;
+        text-align: left;
+        padding-left: 5%;
+        margin: 20px;
+    }
+    article img{
+
+        width: 100%;
+        border-radius: 10px;
+        border:3px solid rgb(0, 0, 0);
+        margin: 0px;
+        
+    
+    }
+}
