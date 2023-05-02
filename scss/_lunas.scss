@@ -1,0 +1,23 @@
+/* pagina las 12 lunas */
+
+.conoce{
+    @include padding(49%, 0%);
+}
+
+table{
+    border: 3px solid $border-color;
+    background-color: gray;
+    @include width(85% , 500px);
+    margin: 5%;
+
+    img{
+        @include width(250px , 250px);
+    }
+
+    td{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    }
+}
+/* finaliza 12 lunas */

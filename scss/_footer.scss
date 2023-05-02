@@ -1,0 +1,93 @@
+/* footer de la pagina */
+
+footer{
+    background-color: #0a141d;
+    @include width(100% , 0); 
+    
+    .grupo-1{
+    @include width(100% , 0);
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    @include padding(45px, 0px);
+
+    
+
+    .box{
+
+        h2{
+            color: $background-color;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        p{
+            color:whitesmoke ;
+            margin-bottom: 10px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    }
+    }
+    .red-social{
+        a{
+            display: inline-block;
+            text-decoration: none;
+            @include width(45px , 45px);
+            line-height: 45px;
+            color: rgb(255, 255, 255);
+            margin-right: 10px;
+            background-color: #0d2033;
+            text-align: center;
+            transition: all 0,5; 
+
+            &:hover{
+                color: rgb(43, 205, 226);
+            }
+        }
+    }
+
+    .grupo-2{
+    @include padding(15px , 10px);
+    text-align: center;
+    background-color: #0a1a2a;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+/* media queries index */
+@media(max-width:768px){
+
+    h1{
+        text-align: left;
+        font-size: 2.5rem;
+        @include padding(5% , 0);
+        padding-top: 30px;
+        margin-bottom: 10px;}
+
+    article p {
+        @include padding(5% , 0%);
+        padding-right: 5%;
+        text-align: left;
+        font-family: 'Source Sans Pro', sans-serif;
+
+    }
+    article h2{
+        color: rgb(206, 95, 21);
+        font-size: 1.7rem;
+        text-align: left;
+        padding-left: 5%;
+        margin: 20px;
+    }
+    article img{
+
+        @include width(100% , 0);
+        border-radius: 10px;
+        border:3px solid rgb(0, 0, 0);
+        margin: 0px;
+        
+    
+    }
+}

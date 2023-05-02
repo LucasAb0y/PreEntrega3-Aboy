@@ -1,0 +1,15 @@
+/* pagina de las respiraciones */
+article{
+    h3{
+    color: $hover-color;
+    font-size: 1.7rem;
+    text-align: left;
+    @include padding(15%, 0%);
+    margin: 20px;
+    }
+
+    ul{
+        @include padding(15%, 0%);
+        margin: 20px;
+}
+}

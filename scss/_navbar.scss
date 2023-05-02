@@ -1,0 +1,42 @@
+/* logo */
+.log{
+    float: left;
+    width: 90px;
+    padding-top: 3px;
+    
+ }
+
+ .menu{
+    background-image:url(../img/zenpat.png);
+    height:6rem;
+    background-color: yellow;
+}
+
+header {
+    div{
+        text-align: left;
+        margin-left: 5px;
+        float: left;
+
+        ul{
+            li{
+                display: inline-block;
+                line-height: 30px;
+                margin: 0 4px;
+                a{
+                    color:black;
+                    font-size: 20px;
+                    padding: 10px 13px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:hover{
+                        background: rgba(199, 111, 11, 0.938);
+                        transition: .5s;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

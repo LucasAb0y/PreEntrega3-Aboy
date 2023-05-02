@@ -1,0 +1,99 @@
+/* Primera pagina */
+h1{
+    text-align: left;
+    font-size: 2.5rem;
+    padding-left: 15%;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+article{
+    background-color: $background-color;
+    h2{
+    color: $hover-color;
+    font-size: 1.7rem;
+    text-align: left;
+    @include padding(15% , 0%);
+    margin: 20px;
+    }
+     p{
+            @include padding(15%, 15%);
+            text-align: left;
+            font-size: 1.3rem;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+ 
+            img{
+                @include width(60% , 0px);
+                    border-radius: 10px;
+                    border:solid $border-color;
+                    margin: 20px;
+                    margin-left: 20%;
+                }
+}
+
+.posnot{
+    top: 7%;
+    position: absolute;
+    margin-left: 20px;
+    h2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: $hover-color;
+    }
+}
+
+.noticias{
+    text-align: center;
+    font-size: 1rem;
+    position: absolute ;
+    background-color:$background-color;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    img{
+    @include width(150px , 100px);
+    border-radius: 6px;
+    border:1px solid ;
+    margin:30px;
+    transition: all 0.5s;
+
+    &:hover{
+       transform: scale(1.09);  
+    }
+   
+    }
+}
+/* descripcion derecha */
+
+.desder{
+    text-align: center;
+    font-size: 1rem;
+    margin-right: 10px;
+    position: absolute ;
+    top: 200px;
+    left: 85%;
+    background-color: $background-color;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+
+    h3{
+        color: $border-color;
+        padding: 3px;
+        text-align: center;
+    }
+
+    img{
+    @include width(210px , 260px);
+    border-radius: 10px;
+    border:2px solid $border-color;
+    margin:30px;
+    transition: all 0.5s;
+
+    &:hover{
+        transform: scale(1.09); 
+    }
+    }
+}
+
+/* Finaliza primera pagina */
