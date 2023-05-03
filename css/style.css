@@ -18,6 +18,12 @@ body {
   float: left;
   width: 90px;
   padding-top: 3px;
+ transition: all 0.5s; 
+}
+
+.log:hover{
+
+transform: scale(1.09);
 }
 
 .menu {
