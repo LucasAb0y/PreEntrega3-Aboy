@@ -57,37 +57,3 @@ footer{
     }
 }
 
-/* media queries index */
-@media(max-width:768px){
-
-    h1{
-        text-align: left;
-        font-size: 2.5rem;
-        @include padding(5% , 5%);
-        padding-top: 30px;
-        margin-bottom: 10px;}
-
-    article p {
-        @include padding(5% , 5%);
-        padding-right: 5%;
-        text-align: left;
-        font-family: 'Source Sans Pro', sans-serif;
-
-    }
-    article h2{
-        color: rgb(206, 95, 21);
-        font-size: 1.7rem;
-        text-align: left;
-        padding-left: 5%;
-        margin: 20px;
-    }
-    article img{
-
-        @include width(100% , 100%);
-        border-radius: 10px;
-        border:3px solid rgb(0, 0, 0);
-        margin: 0px;
-        
-    
-    }
-}
