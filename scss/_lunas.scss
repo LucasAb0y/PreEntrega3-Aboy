@@ -7,13 +7,17 @@
 table{
     border: 3px solid $border-color;
     background-color: gray;
-    @include width(85% , 500px);
+    width: 85%;
     margin: 5%;
 
     img{
         @include width(250px , 250px);
     }
 
+    @media (max-width: 1024px) {
+        img {
+            @include width(100px , 100px);}
+            }
     td{
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
