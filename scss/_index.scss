@@ -24,7 +24,7 @@ article{
         }
  
             img{
-                @include width(60% , 0px);
+                @include width(60% , 60%);
                     border-radius: 10px;
                     border:solid $border-color;
                     margin: 20px;

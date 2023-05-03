@@ -2,16 +2,16 @@
 
 footer{
     background-color: #0a141d;
-    @include width(100% , 0); 
+    @include width(100% , 100%); 
     
     .grupo-1{
-    @include width(100% , 0);
+    @include width(100% , 100%);
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
-    @include padding(45px, 0px);
+    @include padding(45px, 45px);
 
     
 

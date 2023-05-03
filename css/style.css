@@ -18,12 +18,11 @@ body {
   float: left;
   width: 90px;
   padding-top: 3px;
- transition: all 0.5s; 
+  transition: all 0.5s;
 }
 
-.log:hover{
-
-transform: scale(1.09);
+.log:hover {
+  transform: scale(1.09);
 }
 
 .menu {
@@ -84,7 +83,7 @@ article p {
 }
 article img {
   width: 60%;
-  height: 0px;
+  height: 60%;
   border-radius: 10px;
   border: solid black;
   margin: 20px;
@@ -282,18 +281,18 @@ article ul {
 footer {
   background-color: #0a141d;
   width: 100%;
-  height: 0;
+  height: 100%;
 }
 footer .grupo-1 {
   width: 100%;
-  height: 0;
+  height: 100%;
   max-width: 1200px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   padding-left: 45px;
-  padding-right: 0px;
+  padding-right: 45px;
 }
 footer .grupo-1 .box h2 {
   color: white;
